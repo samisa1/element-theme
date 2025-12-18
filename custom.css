@@ -1,0 +1,125 @@
+/* ==========================================================
+   Plauderkiste – Element Web Custom Theme (Mid-Tone)
+   Neutral, ruhig, modern – nicht hell, nicht dunkel
+   ========================================================== */
+
+/* ---------- Farbvariablen ---------- */
+:root {
+  --bg-page: #eef1f4;
+  --bg-panel: #ffffff;
+  --bg-input: #f6f7f9;
+
+  --text-main: #1f2933;
+  --text-muted: #6b7280;
+
+  --border-soft: #d1d5db;
+
+  --accent: #4f6ef7;
+  --accent-hover: #3f5ae0;
+}
+
+/* ---------- Seitenhintergrund ---------- */
+.mx_AuthPage {
+  background: linear-gradient(180deg, #e7eaee, #f3f5f7) !important;
+  color: var(--text-main) !important;
+}
+
+/* ---------- Login / Register Panel ---------- */
+.mx_AuthBody {
+  background: var(--bg-panel) !important;
+  border-radius: 14px !important;
+  padding: 28px !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12) !important;
+  border: 1px solid var(--border-soft) !important;
+}
+
+/* ---------- Logo ---------- */
+.mx_AuthHeader img {
+  max-height: 70px !important;
+  margin-bottom: 12px;
+}
+
+/* ---------- Überschriften ---------- */
+.mx_AuthBody h2,
+.mx_AuthBody h3 {
+  font-weight: 600 !important;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Eingabefelder ---------- */
+.mx_Field input,
+.mx_Field select {
+  background: var(--bg-input) !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--border-soft) !important;
+  padding: 10px 12px !important;
+  font-size: 15px;
+}
+
+/* Fokus */
+.mx_Field input:focus,
+.mx_Field select:focus {
+  border-color: var(--accent) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(79,110,247,0.15);
+}
+
+/* ---------- Primary Buttons ---------- */
+.mx_AccessibleButton_kind_primary,
+.mx_Button.mx_Button_kind_primary {
+  background: var(--accent) !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em;
+}
+
+.mx_AccessibleButton_kind_primary:hover,
+.mx_Button.mx_Button_kind_primary:hover {
+  background: var(--accent-hover) !important;
+}
+
+/* ---------- Secondary Buttons ---------- */
+.mx_AccessibleButton_kind_secondary {
+  border-radius: 10px !important;
+  opacity: 0.9;
+}
+
+/* ---------- Kleine Hinweise / Links ---------- */
+.mx_AuthBody a {
+  color: var(--accent) !important;
+  font-weight: 500;
+}
+
+.mx_AuthBody p,
+.mx_AuthBody .mx_Login_type_container {
+  color: var(--text-muted) !important;
+}
+
+/* ---------- Footer ausblenden (Element Branding) ---------- */
+.mx_AuthFooter {
+  display: none !important;
+}
+
+/* ---------- Chat Hintergrund ---------- */
+.mx_RoomView {
+  background: #f4f6f8 !important;
+}
+
+/* ---------- Sidebar ---------- */
+.mx_LeftPanel {
+  background: #f0f2f5 !important;
+  border-right: 1px solid var(--border-soft);
+}
+
+/* ---------- Nachrichten ---------- */
+.mx_EventTile_content {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* Eigene Nachrichten leicht hervorheben */
+.mx_EventTile_sent .mx_EventTile_content {
+  background: #eef3ff;
+}
